@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poxly</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="icon" type="image/x-icon" href="../images/icons/poxly_favicon.png">
+</head>
+<body>
+    <div class="main-container">
+        <!-- Sidebar -->
+        <nav class="sidebar">
+            <ul class="sidebar-menu">
+                <li><div id="changing-text" class="fade">Time</div></li>
+                <li>
+                    <div id="vertical-clock" class="clock">
+                        <span id="hours" class="largest"></span>
+                        <span id="minutes" class="medium"></span>
+                        <span id="seconds" class="smallest"></span>
+                    </div>
+                </li>
+                <li><a href="../landing/index.html"><img src="../images/icons/home.svg" class="sidebarIcons"></a></li>
+                <li><a href="../data/index.html"><img src="../images/icons/scan.png" class="sidebarIcons"></a></li>
+                <li><a href="../entries/index.html" class="active"><img src="../images/icons/entries.png" class="sidebarIcons"></a></li>
+                <li><a href="../about/index.html" class="active"><img src="../images/icons/about.svg" class="sidebarIcons"></a></li>
+                <li><a href="../index.html" class="active"><img src="../images/land.png" class="sidebarIcons"></a></li>
+            </ul>
+        </nav>
+
+        <!-- Main Content -->
+        <div class="content">
+            <header class="header">
+                <div class="container">
+                    <h1 class="title">User Image Entries</h1>
+                    <p class="subtitle">View the images you have uploaded.</p>
+                </div>
+            </header>
+
+            <section id="user-images" class="user-images-section">
+                <div class="container">
+                    <h2>Your Uploaded Images</h2>
+                    <div class="image-grid">
+                        <!-- Placeholder for images -->
+                        <div class="image-item">
+                            <div class="image-placeholder">Loading Image 1...</div>
+                            <!-- Actual image would replace the placeholder -->
+                            <img src="path_to_image_1.jpg" alt="Uploaded Image 1" class="uploaded-image">
+                            <p>Image 1 description...</p>
+                        </div>
+                        <div class="image-item">
+                            <div class="image-placeholder">Loading Image 2...</div>
+                            <!-- Actual image would replace the placeholder -->
+                            <img src="path_to_image_2.jpg" alt="Uploaded Image 2" class="uploaded-image">
+                            <p>Image 2 description...</p>
+                        </div>
+                        <div class="image-item">
+                            <div class="image-placeholder">Loading Image 3...</div>
+                            <!-- Actual image would replace the placeholder -->
+                            <img src="path_to_image_3.jpg" alt="Uploaded Image 3" class="uploaded-image">
+                            <p>Image 3 description...</p>
+                        </div>
+                        <!-- Add more items as needed based on the number of images -->
+                    </div>
+                </div>
+            </section>
+
+            <footer class="footer">
+                <div class="container">
+                    <p>&copy; 2024 Kelompok 7. All rights reserved.</p>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <script src="../about/about.js"></script>
+</body>
+</html>

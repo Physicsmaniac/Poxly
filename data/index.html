@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Existing Head Content -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poxly</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="icon" type="image/x-icon" href="../images/icons/poxly_favicon.png">
+    <!-- Include your data.js script -->
+    <script src="data.js" defer></script>
+</head>
+<style>
+    .imagePreviews{
+        margin:2rem;
+    }
+    /* Add styles for prediction display */
+    #prediction {
+        margin-top: 1rem;
+        font-size: 1.2rem;
+        color: #333;
+    }
+</style>
+<body>
+    <div class="main-container">
+        <!-- Sidebar -->
+        <nav class="sidebar">
+            <ul class="sidebar-menu">
+                <!-- Existing Sidebar Content -->
+                <div id="changing-text" class="fade"></div>
+                <li>
+                    <div id="vertical-clock" class="clock">
+                        <span id="hours" class="largest"></span>
+                        <span id="minutes" class="medium"></span>
+                        <span id="seconds" class="smallest"></span>
+                    </div>
+                </li>
+                <li><a href="../landing/index.html"><img src="../images/icons/home.svg" class="sidebarIcons"></a></li>
+                <li><a href="../data/index.html"><img src="../images/icons/scan.png" class="sidebarIcons"></a></li>
+                <li><a href="../entries/index.html" class="active"><img src="../images/icons/entries.png" class="sidebarIcons"></a></li>
+                <li><a href="../about/index.html" class="active"><img src="../images/icons/about.svg" class="sidebarIcons"></a></li>
+                <li><a href="../index.html" class="active"><img src="../images/land.png" class="sidebarIcons"></a></li>
+            </ul>
+        </nav>
+
+        <!-- Main Content -->
+        <div class="content">
+            <header class="header">
+                <div class="container">
+                    <h1 class="title">Scan</h1>
+                    <p class="subtitle">Scan a pox case</p>
+                </div>
+            </header>
+
+            <section id="about" class="about-section">
+                <div class="upload-camera-container">
+                    <button id="uploadImageBtn" class="upload-button">Upload Image</button>
+                    <button id="cameraBtn" class="camera-button">Use Camera</button>
+
+                    <div id="cameraStream" style="display: none;">
+                        <video id="video" width="100%" height="auto" autoplay></video>
+                        <button id="captureBtn" class="camera-button">Capture</button>
+                    </div>
+
+                    <div id="imagePreview" style="display: none;">
+                        <h3 class="imagePreviews">Preview:</h3>
+                        <img id="previewImage" src="" alt="Image Preview" style="max-width: 100%; height: auto;">
+                        <!-- Prediction Results -->
+                        <div id="prediction"></div>
+                    </div>
+                </div>
+            </section>
+
+            <footer class="footer">
+                <div class="container">
+                    <p>&copy; 2024 Kelompok 7. All rights reserved.</p>
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>
